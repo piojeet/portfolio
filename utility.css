@@ -1,0 +1,1041 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;600&family=Barlow+Condensed:wght@400;500;600&family=Inconsolata:wght@300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Advent Pro', sans-serif;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--BgColor);
+    overflow-x: hidden;
+}
+
+
+:root {
+    --primaryColor: #00eaff;
+    --primaryHover: hsl(185, 92%, 41%);
+    --secondaryColor: rgb(150, 162, 188);
+    --paragraphColor: rgb(127, 127, 175);
+    --BgColor: #031a30;
+    --formColor: rgb(2, 15, 29);
+    --projectCardColor: #072340;
+    --textColor: #dae4fb;
+}
+
+/* navigation bar section */
+span.next {
+    font-size: 3rem;
+}
+
+.link a.resume {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--primaryColor);
+
+}
+
+div.resume-btn a {
+    border: 2px solid var(--primaryColor);
+    padding: 0.6rem 1.5rem;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--primaryColor);
+    margin-left: 2rem;
+}
+
+.resume-btn {
+    text-align: center;
+}
+
+/* .link a.resume:hover {
+    border: none;
+    background: var(--formColor);
+    padding: 0.7rem 26px;
+} */
+
+::selection {
+    background-color: var(--BgColor);
+    color: #00eaff;
+}
+
+/* navigation bar section */
+
+.box i:hover {
+    color: var(--primaryColor);
+    transform: translateY(-10px);
+}
+
+.rotate p:hover {
+    color: var(--primaryColor);
+}
+
+div.woner-img::before {
+    width: 13rem;
+    height: 13rem;
+    content: "Hover Me";
+    background: rgba(0, 253, 253, 0.534);
+    /* mix-blend-mode: screen; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: 50%;
+    color: var(--BgColor);
+    align-self: center;
+    overflow: hidden;
+    font-family: "Inconsolata", monospace;
+    justify-self: center;
+    transition: all 0.3s;
+}
+
+div.woner-img:hover.woner-img::before {
+    height: 0%;
+}
+
+/* img.image{
+    color: var(--projectCardColor);
+} */
+
+.boll::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid red;
+    position: absolute;
+    border-radius: 50%;
+    transition: all 1s;
+    animation-name: livecircle;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.55s;
+    animation-direction: reverse;
+    cursor: pointer;
+}
+
+@keyframes livecircle {
+    0% {
+        transform: scale();
+        border: none;
+    }
+
+    50% {
+        transform: scale(1);
+        border: 2px solid red;
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+p.skillss {
+    word-spacing: 1rem;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.send:hover {
+    background: var(--primaryHover);
+}
+
+
+
+
+.resume-btn .resume {
+    position: relative;
+}
+
+.resume-btn .resume::before {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: var(--primaryColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: none;
+}
+
+.resume-btn .resume::after {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: var(--BgColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.resume-btn .resume:hover {
+    color: var(--textColor);
+    border: 2px solid var(--BgColor);
+}
+
+.resume-btn .resume:hover::before,
+.resume-btn .resume:hover::after {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.see-more a {
+    position: relative;
+}
+
+.see-more a::before {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: var(--primaryColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: none;
+}
+
+.see-more a::after {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: var(--BgColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.see-more a:hover::before,
+.see-more a:hover::after {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+.back-home a {
+    position: relative;
+}
+
+.back-home a::before {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: var(--primaryColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: none;
+}
+
+.back-home a::after {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: var(--BgColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.back-home a:hover::before,
+.back-home a:hover::after {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.underline {
+    width: 100%;
+    height: 3px;
+    background: var(--secondaryColor);
+    left: 0;
+    top: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 10%;
+    height: 100%;
+    background: var(--textColor);
+    position: absolute;
+    animation-name: moveline;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    left: 0;
+}
+
+@keyframes moveline {
+    from {}
+
+    to {
+        left: 14rem;
+    }
+}
+
+
+
+
+
+
+
+
+ul a::before {
+    content: "";
+    background: var(--primaryColor);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 150ms;
+    border-radius: 10px;
+}
+
+ul a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul a {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1400px) {
+    div.woner-img::before {
+        width: 13rem;
+        height: 13rem;
+        content: "Hover Me";
+        background: rgba(0, 253, 253, 0.534);
+        /* mix-blend-mode: screen; */
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        border-radius: 50%;
+        color: var(--BgColor);
+        align-self: center;
+        overflow: hidden;
+        font-family: "Inconsolata", monospace;
+        justify-self: center;
+        transition: all 0.3s;
+        -webkit-box-pack: center;
+    }
+
+    .full-name {
+        width: 21.2rem;
+        height: 4rem;
+        background: var(--formColor);
+        padding: 0.3rem 2rem;
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 1238px) {
+    div.box-link {
+        width: 16rem;
+        /* border: 1px solid white; */
+        height: 25rem;
+        background: var(--projectCardColor);
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1.8rem 0;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    div.right-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    div.container {
+        /* border: 2px solid var(--primaryColor); */
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        bottom: 0;
+        position: absolute;
+        left: 50px;
+        position: fixed;
+        display: none;
+    }
+
+    section.second-section {
+        /* border: 1px solid white; */
+        width: 85%;
+        margin: 12rem auto;
+    }
+
+    section.section-three {
+        justify-content: center;
+        width: 86%;
+        margin: 17rem auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    div.intro {
+        width: 34%;
+        font-size: 13px;
+        color: var(--textColor);
+        text-align: justify;
+    }
+
+    .section-three>div {
+        width: 49%;
+    }
+
+    div.intro {
+        width: 60%;
+        font-size: 13px;
+        color: var(--textColor);
+        text-align: justify;
+    }
+
+    div.player {
+        display: flex;
+        justify-content: space-between;
+        border: 3px solid var(--projectCardColor);
+        color: var(--BgColor);
+        width: 271px;
+        height: 50px;
+        align-items: center;
+        font-size: 16px;
+        padding: 1.4rem;
+        border-radius: 4rem;
+        margin-top: 2rem;
+    }
+
+    .controls i {
+        color: var(--primaryColor);
+        font-size: 23px;
+        cursor: pointer;
+    }
+
+    .section-three div img {
+        width: 9rem;
+        border-radius: 50%;
+        border: 2px dashed var(--primaryColor);
+        padding: 0.2rem;
+    }
+
+    div.woner-img::before {
+        width: 8.5rem;
+        height: 8.5rem;
+        content: "Hover Me";
+        background: rgba(0, 253, 253, 0.534);
+        /* mix-blend-mode: screen; */
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        font-weight: bolder;
+        border-radius: 50%;
+        color: var(--BgColor);
+        align-self: center;
+        overflow: hidden;
+        font-family: "Inconsolata", monospace;
+        justify-self: center;
+        transition: all 0.3s;
+        -webkit-box-pack: center;
+    }
+
+    div.woner-img {
+        width: 265px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10rem;
+    }
+
+    div.back-home a {
+        border: 2px solid var(--primaryColor);
+        padding: 0.5rem 1.4rem;
+        font-size: 10px;
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--primaryColor);
+    }
+
+    .section-four p {
+        font-size: 14px;
+        color: var(--secondaryColor);
+        margin-top: 1rem;
+    }
+
+
+
+
+    .section-three>div {
+        width: 49%;
+    }
+
+    div.intro {
+        width: 60%;
+        font-size: 13px;
+        color: var(--textColor);
+        text-align: justify;
+    }
+
+
+    p.about {
+        color: var(--secondaryColor);
+        font-weight: bolder;
+        font-size: 1.4rem;
+    }
+
+    .second-section h2 {
+        font-size: 3rem;
+        color: var(--textColor);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    div.Skills {
+        font-size: 24px;
+        color: var(--textColor);
+        font-weight: bolder;
+        width: 7.6rem;
+    }
+
+    .section-four h3 {
+        font-size: 14px;
+        color: var(--textColor);
+        margin-top: 3.5rem;
+    }
+
+    div.about {
+        font-size: 24px;
+        color: var(--textColor);
+        font-weight: bolder;
+        margin-bottom: 3rem;
+        font-family: 'Advent Pro', sans-serif;
+        width: 9rem;
+    }
+
+    .project-section h2 {
+        font-size: 24px;
+        color: var(--textColor);
+        /* width: 10rem; */
+    }
+
+    .project-section {
+        width: 9.4rem;
+        margin: 5rem 0;
+    }
+
+    .section-six h3 {
+        font-size: 24px;
+        color: var(--textColor);
+    }
+
+    .width-set {
+        width: 9rem;
+        margin: 5rem 0;
+    }
+
+    .call-me {
+        color: var(--textColor);
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    div.numer {
+        color: var(--paragraphColor);
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .working h4 {
+        color: var(--primaryColor);
+        font-size: 16px;
+    }
+
+    .name h2 {
+        font-size: 26px;
+        color: var(--textColor);
+        cursor: pointer;
+    }
+
+    .link ul li a {
+        color: var(--textColor);
+        text-decoration: none;
+        font-size: 11px;
+    }
+
+    .link a.resume {
+        padding: 0.4rem 1.3rem;
+        border: 2px solid var(--primaryColor);
+        font-size: 10px;
+    }
+
+    .see-more a {
+        padding: 0.4rem 1.3rem;
+        border: 2px solid var(--primaryColor);
+        font-size: 10px;
+    }
+
+    section.second-section {
+        /* border: 1px solid white; */
+        width: 85%;
+        margin: 12rem auto;
+    }
+
+    .box-link h2 {
+        color: var(--textColor);
+        text-align: center;
+        margin: 0.8rem 0;
+        font-size: 16px;
+    }
+
+    .box-link p {
+        color: var(--secondaryColor);
+        text-align: justify;
+        margin: 1rem 0;
+        font-size: 11px;
+    }
+
+    .uil-github-alt:before {
+        content: '\ec0f';
+    }
+
+
+
+    .live-flex i {
+        color: var(--primaryColor);
+        font-size: 1rem;
+    }
+
+    .live-flex a span {
+        color: rgb(214, 18, 18);
+        font-weight: bolder;
+        font-size: 12px;
+    }
+
+    .boll::before {
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        border: 2px solid red;
+        position: absolute;
+        border-radius: 50%;
+        transition: all 1s;
+        animation-name: livecircle;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 0.55s;
+        animation-direction: reverse;
+        cursor: pointer;
+    }
+
+    .boll {
+        content: "";
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background: crimson;
+        margin-left: 0.7rem;
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+
+    .flex-container img {
+        width: 11rem;
+        height: 6rem;
+    }
+
+    div.box-link {
+        width: 13rem;
+        /* border: 1px solid white; */
+        height: 18rem;
+        background: var(--projectCardColor);
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1.8rem 0;
+    }
+
+    nav {
+        width: 100%;
+        height: 4rem;
+        background: var(--projectCardColor);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0rem 4rem;
+        font-weight: bolder;
+        position: fixed;
+        top: 0;
+        z-index: 9;
+    }
+
+    .section-five {
+        width: 80%;
+        margin: 18rem auto;
+    }
+
+    .section-three>div {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+    .section-five {
+        width: 95%;
+        margin: 18rem auto;
+    }
+
+    .section-six {
+        width: 95%;
+        margin: 12rem auto;
+    }
+
+    .section-four h4 {
+        font-size: 17px;
+        color: var(--secondaryColor);
+        margin: 4rem 0;
+    }
+
+    .section-five h4 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: var(--secondaryColor);
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 678px) {
+    div.msg a {
+        text-decoration: none;
+        color: var(--BgColor);
+        background-color: var(--primaryColor);
+        font-size: 14px;
+        padding: 0.3rem 1.4rem;
+        border-radius: 10%;
+        font-weight: bolder;
+    }
+
+    div.down {
+        color: var(--primaryColor);
+        font-size: 14px;
+    }
+
+    div.cv a {
+        text-decoration: none;
+        color: var(--BgColor);
+        background-color: var(--primaryColor);
+        font-size: 13px;
+        padding: .3rem 0.7rem;
+        margin-bottom: 1rem;
+        font-weight: bolder;
+    }
+
+    div.box-link {
+        width: 13rem;
+        /* border: 1px solid white; */
+        height: 18rem;
+        background: var(--projectCardColor);
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1.8rem 3px;
+    }
+
+    .full-name {
+        width: 18rem;
+        height: 3rem;
+        background: var(--formColor);
+        padding: 0.3rem 2rem;
+        margin: 1rem 0;
+    }
+
+    #textarea {
+        background: var(--formColor);
+        outline: none;
+        border: none;
+        padding: 1rem;
+        color: var(--textColor);
+        /* width: 18rem; */
+        height: 9rem;
+    }
+
+    .send {
+        width: 100%;
+        background: var(--primaryColor);
+        text-align: center;
+        padding: 0.7rem;
+        border-radius: 5rem;
+        font-size: 0.9rem;
+        margin: 1rem 0;
+    }
+
+    .section-four {
+        width: 86%;
+        margin: 12rem auto;
+    }
+
+    .section-five h4 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: var(--secondaryColor);
+    }
+
+    div.box-link {
+        width: 10rem;
+        /* border: 1px solid white; */
+        height: 16rem;
+        background: var(--projectCardColor);
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1.8rem 0;
+    }
+
+    .flex-container img {
+        width: 8rem;
+        height: 3.5rem;
+    }
+
+    div.link {
+        display: flex;
+
+    }
+}
+
+
+
+/* main{
+    width: 80%;
+    text-align: initial;
+} */
+
+
+.navtoggle i {
+    color: var(--primaryColor);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.closeicon i {
+    color: var(--primaryColor);
+    font-size: 28px;
+}
+
+.toggleIcon {
+    display: none;
+    z-index: 999;
+}
+
+.toggleIcon1 {
+    display: none;
+}
+
+.navtoggle {
+    position: absolute;
+    right: 2rem;
+
+}
+
+@media only screen and (max-width: 655px) {
+    .toggleIcon {
+        display: block;
+        z-index: 999;
+    }
+
+    div.navbar {
+        /* display: none; */
+        width: 70%;
+        height: 20rem;
+        position: absolute;
+        background: var(--formColor);
+        top: 5rem;
+        /* left: 3rem;
+    right: 3rem; */
+        border-radius: 20px;
+        border: 2px solid var(--primaryColor);
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+
+        transform: translateY(-130%);
+        transition: all 1s;
+        z-index: 999;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+
+    }
+
+    .link a.resume {
+        padding: 0.4rem 1.3rem;
+        border: 2px solid var(--primaryColor);
+        font-size: 11px;
+        /* text-align: center; */
+        margin: 0 auto;
+    }
+
+    .active .navbar {
+        transform: translateY(0);
+    }
+
+    .active .toggleIcon1 {
+        display: block;
+    }
+
+    .active .toggleIcon {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 2040px) {
+    .full-name {
+        width: 21.2rem;
+        height: 4rem;
+        background: var(--formColor);
+        padding: 0.3rem 2rem;
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 383px) {
+    .full-name {
+        width: 16.2rem;
+        height: 3rem;
+        background: var(--formColor);
+        padding: 0.3rem 2rem;
+        margin: 1rem 0;
+    }
+
+    #textarea {
+        background: var(--formColor);
+        outline: none;
+        border: none;
+        padding: 1rem;
+        color: var(--textColor);
+        width: 16.3rem;
+        height: 6rem;
+    }
+
+}
